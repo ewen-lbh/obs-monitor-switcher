@@ -8,8 +8,8 @@ def scene_item_id(obs: ReqClient, config: OBSConfig, item: str) -> str:
 
 
 def hide_scene_item(obs: ReqClient, config: OBSConfig, item: str):
-    obs.set_scene_item_enabled(config, scene_item_id(obs, config, item), False)
+    obs.set_scene_item_enabled(config.scene, scene_item_id(obs, config, item), False)
 
 
 def show_scene_item(obs: ReqClient, config: OBSConfig, item: str):
-    obs.set_scene_item_enabled(config, scene_item_id(obs, config, item), True)
+    obs.set_scene_item_enabled(config.scene, scene_item_id(obs, config, item), True)

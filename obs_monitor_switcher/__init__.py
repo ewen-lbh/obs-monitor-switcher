@@ -22,7 +22,7 @@ def main():
             print(f"Monitor {monitor} not found in config, doing nothing")
             return
 
-        print(f"Monitor is {monitor}, hiding {actions.hide} and showing {actions.show}")
+        print(f"Monitor is {monitor}, hiding {actions.hide} and showing {actions.show} on scene {config.obs.scene}")
         if actions.hide:
             show_scene_item(obs, config.obs, actions.hide)
         if actions.show:
