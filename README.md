@@ -2,7 +2,8 @@
 
 Hides and shows sources on an OBS scene depending on the active monitor.
 
-Uses websockets to communicate with both your window manager (only [Hyprland](https://hyprland.org) is supported at the moment) and OBS.
+Uses websockets to communicate with both your window manager (only [Hyprland](https://hyprland.org) is supported at the moment, see [Implementing new listeners](#implementing-new-listeners)) and OBS.
+
 
 ## Installation
 
@@ -65,3 +66,15 @@ hide = "Left monitor" # hide the source named "Left monitor"
 show = "Left monitor" # show the source named "Left monitor"
 hide = "Right monitor" # hide the source named "Right monitor"
 ```
+
+## Contributing
+
+### Implementing new listeners
+
+Just create a new file in `obs_monitor_switcher/listeners/` that implements the `obs_monitor_switcher.core.Listener` interface.
+
+Then, register your listener by adding it to the `listeners` dict in `obs_monitor_switcher/listeners/__init__.py`.
+
+The key should be the name of the window manager, and the value should be the listener class.
+
+That key corresponds to the value of `window_manager` in the configuration file.
