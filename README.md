@@ -6,6 +6,14 @@ Uses websockets to communicate with both your window manager (only [Hyprland](ht
 
 ## Installation
 
+### With [pipx](https://pipx.pypa.io/)
+
+```bash
+pipx install git+https://github.com/ewen-lbh/obs-monitor-switcher
+```
+
+### Manually
+
 For now, installation is manual (and requires [Poetry](https://python-poetry.org/)):
 
 ```bash
