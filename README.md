@@ -22,11 +22,12 @@ pipx install git+https://github.com/ewen-lbh/obs-monitor-switcher
 
 ### Manually
 
-For now, installation is manual (and requires [Poetry](https://python-poetry.org/)):
+Requires [Poetry](https://python-poetry.org/)
 
 ```bash
 git clone https://github.com/ewen-lbh/obs-monitor-switcher
 cd obs-monitor-switcher
+poetry shell
 poetry install
 ```
 
@@ -35,8 +36,6 @@ poetry install
 See [Configuration](#configuration) to create the `config.toml` file.
 
 ```bash
-poetry shell
-poetry install
 obs-monitor-switcher config.toml
 ```
 
