@@ -2,7 +2,7 @@ import sys
 
 from obsws_python import ReqClient as OBSClient
 
-from obs_monitor_switcher import listeners
+from obs_monitor_switcher.listeners import listeners
 from obs_monitor_switcher.config import Config
 from obs_monitor_switcher.obs import hide_scene_item, show_scene_item
 
