@@ -4,6 +4,13 @@ Hides and shows sources on an OBS scene depending on the active monitor.
 
 Uses websockets to communicate with both your window manager (only [Hyprland](https://hyprland.org) is supported at the moment, see [Implementing new listeners](#implementing-new-listeners)) and OBS.
 
+## Requirements
+
+Requires OBS to have Websocket support. 
+
+### Arch Linux
+
+For Arch Linux users, as of now, the `obs-studio` package in the official repositories does not have Websocket support. You can use the `obs-studio-git` package from the AUR instead. [source](https://wiki.archlinux.org/title/Open_Broadcaster_Software#Global_shortcuts_in_KDE_not_working)
 
 ## Installation
 
