@@ -1,0 +1,17 @@
+window_manager = "hyprland"
+
+[connection]
+host = "localhost"
+port = 4455
+password = ""
+
+[obs]
+scene = "Stream"
+
+[monitors.DVI-D-1]
+show = "Right monitor"
+hide = "Left monitor"
+
+[monitors.HDMI-A-1]
+show = "Left monitor"
+hide = "Right monitor"

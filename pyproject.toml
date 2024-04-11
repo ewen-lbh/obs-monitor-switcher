@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "obs_monitor_switcher"
+version = "0.1.0"
+description = ""
+authors = ["Ewen Le Bihan <hey@ewen.works>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+obsws-python = "^1.7.0"
+toml = "^0.10.2"
+
+[tool.poetry.scripts]
+obs-monitor-switcher = "obs_monitor_switcher:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
