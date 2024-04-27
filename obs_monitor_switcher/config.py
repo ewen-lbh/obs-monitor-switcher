@@ -22,15 +22,16 @@ class ConnectionConfig(NamedTuple):
 class OBSConfig(NamedTuple):
     """
     Configuration for OBS.
+    Leave `scene` empty to change all scenes.
 
 
     ```toml
     [obs]
-    scene = "Stream"
+    scenes = ["Stream"]
     ```
     """
 
-    scene: str
+    scenes: list[str]
 
 
 class MonitorConfig(NamedTuple):
